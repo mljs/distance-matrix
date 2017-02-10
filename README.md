@@ -17,7 +17,7 @@ Compute a distance/similarity matrix
 ## Example
 
 ```js
-const distanceMatrix = require('.');
+const distanceMatrix = require('ml-distance-matrix');
 const euclidean = require('ml-distance-euclidean');
 
 // Computes euclidan distance for each pair of possible vectors
