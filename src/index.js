@@ -5,7 +5,7 @@
  * Computes a distance/similarity matrix given an array of data and a distance/similarity function.
  * @param {Array} data An array of data
  * @param {function} distanceFn  A function that accepts two arguments and computes a distance/similarity between them
- * @return {Array<Array>} The similarity matrix. The similarity matrix is square and has a size equal to the length of
+ * @return {Array<Array>} The distance/similarity matrix. The matrix is square and has a size equal to the length of
  * the data array
  */
 function distanceMatrix(data, distanceFn) {
