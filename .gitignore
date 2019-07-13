@@ -4,3 +4,5 @@ logs
 *.log
 npm-debug.log*
 coverage
+distance-matrix.js
+distance-matrix.d.ts
