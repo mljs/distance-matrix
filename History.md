@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/mljs/distance-matrix/compare/v2.0.0...v2.0.1) (2020-04-08)
+
+
+### Bug Fixes
+
+* remove declare from TS definition ([7a6d45e](https://github.com/mljs/distance-matrix/commit/7a6d45e7c16bd9f6b2ba551b48760d96c09f0876))
+
+
+
 # [2.0.0](https://github.com/mljs/distance-matrix/compare/v1.0.0...v2.0.0) (2019-07-13)
 
 

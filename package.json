@@ -1,6 +1,6 @@
 {
   "name": "ml-distance-matrix",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Compute a distance/similarity matrix",
   "main": "distance-matrix.js",
   "module": "src/index.js",
