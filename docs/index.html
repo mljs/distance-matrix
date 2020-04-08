@@ -1,24 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8' />
-  <title>ml-distance-matrix 1.0.0 | Documentation</title>
+  <meta charset='utf-8'>
+  <title>ml-distance-matrix 2.0.1 | Documentation</title>
+  <meta name='description' content='Compute a distance/similarity matrix'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
-  <link href='assets/style.css' type='text/css' rel='stylesheet' />
-  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
 </head>
-<body class='documentation'>
-  <div class='max-width-4 mx-auto'>
-    <div class='clearfix md-mxn2'>
-      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>ml-distance-matrix</h3>
-          <div class='mb1'><code>1.0.0</code></div>
+          <div class='mb1'><code>2.0.1</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
             class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
             type='text' />
           <div id='toc'>
             <ul class='list-reset h5 py1-ul'>
@@ -36,14 +40,14 @@
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
-            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
           </div>
         </div>
       </div>
-      <div class='fix-margin-3'>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -53,7 +57,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mljs/distance-matrix/blob/dc011ca034f9b39e810204b01cd9ba6ec8db1241/src/index.js#L11-L30'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mljs/distance-matrix/blob/0e64721817a99b7bc682f55837df66c82fe4a945/src/index.js#L8-L20'>
       <span>src/index.js</span>
       </a>
     
@@ -62,11 +66,11 @@
 
   <p>Computes a distance/similarity matrix given an array of data and a distance/similarity function.</p>
 
-
-  <div class='pre p1 fill-light mt0'>distanceMatrix(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, distanceFn: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>></div>
+    <div class='pre p1 fill-light mt0'>distanceMatrix(data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, distanceFn: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>></div>
   
   
 
+  
   
   
   
@@ -79,7 +83,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
 	    An array of data
 
           </div>
@@ -88,7 +92,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>distanceFn</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+            <span class='code bold'>distanceFn</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
 	    A function that accepts two arguments and computes a distance/similarity between them
 
           </div>
@@ -103,12 +107,16 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>></code>:
         The distance/similarity matrix. The matrix is square and has a size equal to the length of
 the data array
 
       
     
+  
+
+  
+
   
 
   
@@ -126,8 +134,8 @@ the data array
         
       </div>
     </div>
-  </div>
   <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
   <script src='assets/site.js'></script>
 </body>
 </html>
