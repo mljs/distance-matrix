@@ -15,10 +15,11 @@
     "compile": "rollup -c",
     "eslint": "eslint src",
     "eslint-fix": "eslint src --fix",
-    "prepublishOnly": "npm run compile",
-    "test": "npm run test-coverage && npm run eslint",
-    "test-only": "jest",
-    "test-coverage": "jest --coverage"
+    "prepack": "npm run compile",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "test": "npm run test-only && npm run eslint && npm run prettier",
+    "test-only": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -40,14 +41,11 @@
   },
   "homepage": "https://github.com/mljs/distance-matrix#readme",
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
-    "eslint": "^6.8.0",
-    "eslint-config-cheminfo": "^3.0.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^25.2.7",
-    "prettier": "^2.0.4",
-    "rollup": "^2.3.4"
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "eslint": "^8.10.0",
+    "eslint-config-cheminfo": "^7.2.2",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "rollup": "^2.69.1"
   }
 }
